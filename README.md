@@ -3,7 +3,7 @@
 这是一个基于 Material Design 3 的颜色系统实现，可以根据一个主题色生成完整的 Material Design 3 配色方案。
 
 ## 项目结构
-
+```
 material-color/
 ├── include/                          # 头文件目录
 │   ├── materialcolorscheme.h         # 颜色系统主要接口
@@ -25,6 +25,7 @@ material-color/
     ├── mainwindow.cpp                # 主窗口实现
     ├── mainwindow.h                  # 主窗口头文件
     └── mainwindow.ui                 # Qt UI 文件
+```
 
 ## 功能特性
 
@@ -56,6 +57,7 @@ material-color/
    - Background Colors
    - Outline Colors
    - Fixed Colors
+   - ...
 
 ## 技术要求
 
