@@ -26,6 +26,10 @@ material-color/
     ├── mainwindow.h                  # 主窗口头文件
     └── mainwindow.ui                 # Qt UI 文件
 ```
+* **特别说明**,第三方库 material-color-utilities 是 Google 官方维护的库,原本还依赖另一个谷歌的C++扩展开源库 absl,但是由于使用有限,仅仅用于实现了`include\third_party\material-color-utilities\cpp\utils\utils.cc`部分中的`HexFromArgb`函数,其他部分没有使用。为了避免将整个 `absl` 库引入项目中,将 `HexFromArgb` 函数注释掉了。但是在仓库中依然保留了 `absl` 库,以供将来使用。
+```cpp
+std::string HexFromArgb(Argb argb) { return absl::StrCat(absl::Hex(argb)); }
+```
 
 ## 功能特性
 
